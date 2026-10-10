@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grace in the Becoming | Grow in Faith</title>
+    <meta name="description" content="Discover the Bible, learn about Jesus, and grow in faith through Bible lessons, reflections, and reading plans.">
+
+    <style>
+        :root {
+            --white: #FFFEFC;
+            --maroon: #6E2638;
+            --maroon-dark: #4D1928;
+            --beige: #F5F0E9;
+            --beige-dark: #D8C3B8;
+            --text: #49363A;
+            --muted: #786A6A;
+            --border: #E6DFD8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: var(--white);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 23px;
+            color: var(--maroon);
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: var(--maroon);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 22px 95px;
+            background: var(--beige);
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            color: var(--maroon);
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 7vw, 68px);
+            font-weight: normal;
+            line-height: 1.2;
+            color: var(--maroon);
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--maroon);
+            color: var(--white);
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background 0.2s;
+        }
+
+        .button:hover {
+            background: var(--maroon-dark);
+        }
+
+        section {
+            padding: 75px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            font-weight: normal;
+            color: var(--maroon);
+            margin-bottom: 14px;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 590px;
+            margin: 0 auto 38px;
+            color: var(--muted);
+        }
+
+        .verse {
+            max-width: 760px;
+            margin: auto;
+            text-align: center;
+            padding: 35px 25px;
+            border-top: 1px solid var(--beige-dark);
+            border-bottom: 1px solid var(--beige-dark);
+        }
+
+        .verse blockquote {
+            font-size: clamp(21px, 3vw, 27px);
+            font-style: italic;
+            color: var(--maroon);
+            margin-bottom: 12px;
+        }
+
+        .verse cite {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            padding: 28px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(78, 25, 40, 0.07);
+        }
+
+        .card h3 {
+            font-size: 23px;
+            font-weight: normal;
+            color: var(--maroon);
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .card a {
+            color: var(--maroon);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .about {
+            background: var(--beige);
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 660px;
+            margin: 0 auto 18px;
+        }
+
+        footer {
+            background: var(--maroon-dark);
+            color: #F5F0E9;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 13px;
+        }
+
+        footer p + p {
+            margin-top: 5px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 70px 20px;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Grace in the Becoming</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#bible-basics">Bible Basics</a>
+            <a href="#jesus">Know Jesus</a>
+            <a href="#reflections">Reflections</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="eyebrow">Faith · Truth · Grace</div>
+
+            <h1>A little closer to<br>God, every day.</h1>
+
+            <p>
+                Welcome to a quiet corner of the internet where
+                you can discover God's Word, learn about Jesus,
+                ask questions, and grow in faith at your own pace.
+                Wherever you are in your journey, you are welcome here.
+            </p>
+
+            <a class="button" href="#bible-basics">
+                Begin Your Journey
+            </a>
+        </section>
+
+        <section>
+            <div class="verse">
+                <blockquote>
+                    "Your word is a lamp for my feet,
+                    a light on my path."
+                </blockquote>
+                <cite>Psalm 119:105 (NIV)</cite>
+            </div>
+        </section>
+
+        <section id="bible-basics">
+            <h2 class="section-title">Explore the Word</h2>
+
+            <p class="section-intro">
+                You don't need to know everything to begin.
+                Start with the basics, discover the stories,
+                and explore Scripture one step at a time.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Bible Basics</h3>
+                    <p>
+                        What is the Bible? How is it organised?
+                        How can you begin reading and understanding it?
+                    </p>
+                    <a href="bible-basics.html">Start learning →</a>
+                </article>
+
+                <article class="card" id="jesus">
+                    <h3>Know Jesus</h3>
+                    <p>
+                        Discover the life, teachings, death,
+                        and resurrection of Jesus Christ.
+                    </p>
+                    <a href="jesus.html">Discover Jesus →</a>
+                </article>
+
+                <article class="card" id="reflections">
+                    <h3>Faith & Reflections</h3>
+                    <p>
+                        Find Scripture, thoughtful reflections,
+                        and encouragement for everyday life.
+                    </p>
+                    <a href="reflections.html">Grow in faith →</a>
+                </article>
+
+                <article class="card">
+                    <h3>Bible Reading Plans</h3>
+                    <p>
+                        Build a daily habit with simple,
+                        guided Bible-reading plans for beginners.
+                    </p>
+                    <a href="reading-plans.html">Explore plans →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="about">
+            <h2 class="section-title">Growing, one day at a time</h2>
+
+            <p>
+                Faith is a journey, not a race. Give yourself
+                time to learn, space to ask questions, and
+                opportunities to return to God's Word.
+            </p>
+
+            <p>
+                <em>"Be still, and know that I am God."</em>
+                <br>
+                Psalm 46:10
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Grace in the Becoming</p>
+        <p>Made with faith, for every soul seeking God.</p>
+    </footer>
+
+</body>
+</html>
